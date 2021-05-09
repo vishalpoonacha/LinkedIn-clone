@@ -55,10 +55,14 @@ const Header =(props) =>{
                         <User>
                             <a>
                                 <img src="/images/user.svg" alt="" />
-                                <span>Me</span>
+                                <span>Me
                                 <img src="/images/down-icon.svg" alt="" />
+                                </span>
+                               
                             </a>
-                            <SignOut></SignOut>
+                            <SignOut>
+                                <a>Sign Out</a>
+                            </SignOut>
                         </User>
                         <Work>
                             <a>
@@ -226,10 +230,27 @@ const NavList = styled.li`
         }
     }
 `;
+
+const SignOut = styled.div`
+    position:absolute;
+    top:45px;
+    background:white;
+    border-radius:0 0 5px 5px;
+    width:100px;
+    height:40px;
+    font-size:16px;
+    transition-duration:167ms;
+    text-align:center;
+    display:none;
+
+
+`;
 const User = styled(NavList)`
     a >svg{
         width:24px;
         border-radius:50%;
+        
+       
 
 
     }
@@ -238,6 +259,8 @@ const User = styled(NavList)`
         width:24px;
         height:24px;
         border-radius:50%;
+      
+        
 
 
     }
@@ -245,6 +268,20 @@ const User = styled(NavList)`
     span{
         display:flex;
         align-items:center;
+
+        
+    }
+
+    
+
+    &:hover{
+        ${SignOut}{
+            align-items:center;
+            display:flex;
+            justify-content:center;
+            cursor:pointer;
+
+        }
     }
 `;
 
@@ -253,7 +290,7 @@ const Work = styled(User)`
 
 `;
 
-const SignOut = styled.div``;
+
 
 
 
