@@ -9,11 +9,24 @@ const Rightside = (props) => {
           <img src="/images/feed-icon.svg" alt="" />
         </Title>
         <FeedList>
-            <li>
-                <a>
-                    <Avatar/>
-                </a>
-            </li>
+          <li>
+            <a>
+              <Avatar />
+            </a>
+            <div>
+              <span>#Linkedin</span>
+              <button>Follow</button>
+            </div>
+          </li>
+          <li>
+              <a>
+                  <Avatar/>
+              </a>
+              <div>
+                  <span>#Video</span>
+                  <button>Follow</button>
+              </div>
+          </li>
         </FeedList>
       </FollowCard>
     </Container>
@@ -44,5 +57,46 @@ const Title = styled.div`
   width: 100%;
   color: rgba(0, 0, 0, 0.6);
 `;
+
+
+const FeedList = styled.ul`
+    margin-top:16px;
+
+    li{
+        display:flex;
+        align-items:center;
+        margin:12px 0;
+        position:relative;
+        font-size:14px;
+
+        & > div{
+            display:flex;
+            flex-direction:column;
+        }
+
+    button{
+        background-color:transparent;
+        color:rgba(0,0,0,0.6);
+        box-shadow:inset 0 0 0 1px rgba(0,0,0,0.6);
+        padding:16px;
+        align-items:center;
+        border-radius:15px;
+        box-sizing:border-box;
+        font-weight:600;
+        display:inline-flex;
+        justify-content:center;
+        max-height:32px;
+        max-width:480px;
+        text-align:center;
+        cursor: pointer;
+    }
+
+    }
+`;
+
+const Avatar = styled.div``;
+
+
+
 
 export default Rightside;
