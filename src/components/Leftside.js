@@ -144,6 +144,7 @@ const Widget = styled.div`
         }
         &:nth-child(2) {
           color: rgba(0, 0, 0, 1);
+          font-weight: 600;
         }
       }
     }
@@ -164,6 +165,7 @@ const Item = styled.div`
     display: flex;
     align-items: center;
     color: rgba(0, 0, 0, 1);
+    font-weight: 600;
 
     svg {
       color: rgba(0, 0, 0, 0.6);
@@ -194,6 +196,7 @@ const CommunityCard = styled(ArtCard)`
       display: flex;
       align-items: center;
       justify-content: space-between;
+      font-weight: 600;
     }
 
     &:last-child {
