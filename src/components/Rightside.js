@@ -82,7 +82,7 @@ const FeedList = styled.ul`
       display: flex;
       flex-direction: column;
 
-      span{
+      span {
         font-weight: 600;
       }
     }
