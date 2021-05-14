@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
+import PostModal from "./PostModal";
+
 
 const Main = (props) => {
   return (
@@ -89,6 +91,7 @@ const Main = (props) => {
           </SocialActions>
         </Article>
       </div>
+      <PostModal/>
     </Container>
   );
 };
