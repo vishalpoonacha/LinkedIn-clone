@@ -3,6 +3,7 @@ import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
 import PostModal from "./PostModal";
 import { useState } from "react";
 import { connect } from "react-redux";
+import ImageIcon from '@material-ui/icons/Image';
 
 const Main = (props) => {
   const [showModal, setShowModal] = useState("close");
@@ -41,7 +42,7 @@ const Main = (props) => {
         </div>
         <div>
           <button>
-            <img src="/images/photo-icon.svg" alt="" />
+            <ImageIcon style={{color:'purple', marginRight:'5px'}}/>
             <span>Photo</span>
           </button>
           <button>
